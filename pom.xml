@@ -15,6 +15,38 @@
         <mongo-sdk.version>0.1.6</mongo-sdk.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>nexus-tesseractinternal-maven-releases</id>
+            <name>Sonatype Nexus Repository Manager Maven Releases</name>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <url>https://nexus.tesseractinternal.com/repository/maven-releases</url>
+        </repository>
+
+        <repository>
+            <id>nexus-tesseractinternal-maven-snapshots</id>
+            <name>Sonatype Nexus Repository Manager Maven Snapshots</name>
+            <url>https://nexus.tesseractinternal.com/repository/maven-snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>maglev</id>
+            <name>maglev</name>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>https://engci-maven.cisco.com/artifactory/Tesseract-release</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>com.cisco.maglev</groupId>
